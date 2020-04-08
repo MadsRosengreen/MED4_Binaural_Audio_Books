@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Ardity/Scenes/DemoScene_AutoPoll.unity
+- path: Assets/Ardity/Scenes/DemoScene_UserPoll_ReadWrite.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
