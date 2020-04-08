@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ec5014-a613-44a7-9d38-84200ffe86df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/simulating_gyroscope.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/around_head.py" beforeDir="false" afterPath="$PROJECT_DIR$/around_head.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Repos\P4_UnderConstruction\Project A.B.B.A 2.0" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.simulating_gyroscope">
     <configuration name="around_head" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project A.B.B.A 2.0" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -62,8 +68,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="simulating_gyroscope" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Project A.B.B.A 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/simulating_gyroscope.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.simulating_gyroscope" />
         <item itemvalue="Python.around_head" />
       </list>
     </recent_temporary>
@@ -80,7 +109,7 @@
       <updated>1586336034540</updated>
       <workItem from="1586336046413" duration="1362000" />
       <workItem from="1586337421444" duration="797000" />
-      <workItem from="1586338229980" duration="1126000" />
+      <workItem from="1586338229980" duration="12068000" />
     </task>
     <task id="LOCAL-00001" summary="testing git">
       <created>1586338536644</created>
@@ -89,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586338536644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding sofa files and around_head python file">
+      <created>1586342817231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586342817231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,7 +133,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing git" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing git" />
+    <MESSAGE value="adding sofa files and around_head python file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding sofa files and around_head python file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586336602008">
@@ -108,34 +145,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1586342694548" />
-    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1586338535611">
+    <state x="393" y="7" key="CommitChangelistDialog2" timestamp="1586342816249">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586338535611" />
+    <state x="393" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586342816249" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1586337794179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586337794179" />
-    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1586342695917">
+    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1586348312716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586342695917" />
-    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1586342695916">
+    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586348312716" />
+    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1586348312716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586342695916" />
-    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1586342695915">
+    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586348312716" />
+    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1586348312716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586342695915" />
-    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1586342695916">
+    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586348312716" />
+    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1586348312716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586342695916" />
-    <state x="186" y="42" key="SettingsEditor" timestamp="1586342654287">
+    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586348312716" />
+    <state x="260" y="73" key="SettingsEditor" timestamp="1586346401188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="186" y="42" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586342654287" />
+    <state x="260" y="73" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586346401188" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1586338512383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -144,8 +181,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1586336637455" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586345684355">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586345684355" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Project_A_B_B_A_2_0$simulating_gyroscope.coverage" NAME="simulating_gyroscope Coverage Results" MODIFIED="1586348312708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Project_A_B_B_A_2_0$test.coverage" NAME="test Coverage Results" MODIFIED="1586342695903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
