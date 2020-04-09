@@ -4,12 +4,12 @@ import numpy as np
 import sounddevice as sd
 from scipy.signal import *
 
-hrtf_database = sofa.Database.open('QU_KEMAR_anechoic_3m.sofa')
+hrtf_database = sofa.Database.open('QU_KEMAR_anechoic_1m.sofa')
 
 # recording
 sampling_freq = 48000
 sd.default.samplerate = sampling_freq
-sd.default.channels = (1, 2)
+sd.default.channels = (1, 5)
 rec_time = 20 # seconds
 
 mic_data = sd.rec(rec_time * sampling_freq)
