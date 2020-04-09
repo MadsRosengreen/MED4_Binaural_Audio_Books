@@ -5,3 +5,6 @@ Project A.B.B.A/Temp/UnityLockfile
 *.xml
 *.iml
 *.xml
+.idea/*
+Project A.B.B.A 2.0/.idea/*
+
