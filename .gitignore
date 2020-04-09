@@ -8,3 +8,5 @@ Project A.B.B.A/Temp/UnityLockfile
 .idea/*
 Project A.B.B.A 2.0/.idea/*
 
+*.xml
+*.iml
