@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ec5014-a613-44a7-9d38-84200ffe86df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Project A.B.B.A 2.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project A.B.B.A 2.0.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/around_head.py" beforeDir="false" afterPath="$PROJECT_DIR$/around_head.py" afterDir="false" />
->>>>>>> d271af9206de3548d02ff88d03ec6be22377d24f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,14 +42,6 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-<<<<<<< HEAD
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Repos\P4_UnderConstruction\Project A.B.B.A 2.0" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.simulating_gyroscope">
-=======
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -66,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.UI">
+  <component name="RunManager" selected="Python.around_head (1)">
     <configuration name="UI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project A.B.B.A 2.0" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +97,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
->>>>>>> d271af9206de3548d02ff88d03ec6be22377d24f
     <configuration name="around_head" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Project A.B.B.A 2.0" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,12 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
-<<<<<<< HEAD
         <item itemvalue="Python.simulating_gyroscope" />
-=======
-        <item itemvalue="Python.UI" />
-        <item itemvalue="Python.around_head (1)" />
->>>>>>> d271af9206de3548d02ff88d03ec6be22377d24f
         <item itemvalue="Python.around_head" />
       </list>
     </recent_temporary>
@@ -219,7 +201,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
