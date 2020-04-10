@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55ec5014-a613-44a7-9d38-84200ffe86df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Project A.B.B.A 2.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project A.B.B.A 2.0.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/around_head.py" beforeDir="false" afterPath="$PROJECT_DIR$/around_head.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/guitar.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/shroders_reverb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Project A.B.B.A 2.0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/.idea/Project A.B.B.A 2.0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QU_KEMAR_anechoic_1m.sofa" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/QU_KEMAR_anechoic_1m.sofa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QU_KEMAR_anechoic_3m.sofa" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/QU_KEMAR_anechoic_3m.sofa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/UI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/around_head.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/around_head.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serial_read.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/serial_read.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulating_gyroscope.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_A.B.B.A_2.0/simulating_gyroscope.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +52,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Github\P4_UnderConstruction\Project A.B.B.A 2.0" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -54,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.around_head (1)">
+  <component name="RunManager" selected="Python.shroders_reverb (1)">
     <configuration name="UI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Project A.B.B.A 2.0" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,27 +83,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="around_head (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Project A.B.B.A 2.0" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/around_head.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,6 +105,48 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="C:\Repos\P4_UnderConstruction\Project A.B.B.A 2.0\around_head.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shroders_reverb (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Project A.B.B.A 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Project_A.B.B.A_2.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Project_A.B.B.A_2.0/shroders_reverb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shroders_reverb" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Project A.B.B.A 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shroders_reverb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,6 +179,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.shroders_reverb (1)" />
+        <item itemvalue="Python.shroders_reverb" />
         <item itemvalue="Python.simulating_gyroscope" />
         <item itemvalue="Python.around_head" />
       </list>
