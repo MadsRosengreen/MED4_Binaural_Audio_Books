@@ -1,65 +1,63 @@
-import pyglet
 import sofa
-import matplotlib.pyplot as plt
 import numpy as np
 import sounddevice as sd
 import soundfile as sf
 from scipy.signal import *
+import matplotlib.pyplot as plt
 
 hrtf_database = sofa.Database.open('QU_KEMAR_anechoic_3m.sofa')
 
-# recording
-sampling_freq = 48000
-sd.default.samplerate = sampling_freq
-sd.default.channels = (1, 2)
-rec_time = 1 # seconds
+data, sampling_freq = sf.read('sample.wav')
+input_transposed_right = np.reshape(data[:, 0], (-1, 1)).transpose()
+input_transposed_left = np.reshape(data[:, 1], (-1, 1)).transpose()
 
-mic_data = sd.rec(rec_time * sampling_freq)
-mic_data_transposed = mic_data.transpose()
+total_samples = data.shape[0]
+total_different_positions = 360
 
-print("Recording...")
-sd.wait()
-print("Recording ended.")
+# creating a data structure that will store all the transforming information..
+# I think the best and most efficient way to store it is
 
-
-population = [(90, 200), (91, 20), (92, 20), (93, 20), (94, 20), (95, 20), (96, 20), (97, 20), (98, 20),
-              (99, 20), (100, 20), (101, 20), (-1, 200)]
-
-output_ear1 = np.zeros([1, rec_time * sampling_freq])
-output_ear2 = np.zeros([1, rec_time * sampling_freq])
+population = []
+for i in range(total_different_positions):
+    population.append((i, total_samples // total_different_positions if i > 0 else total_samples % total_different_positions))
+    # split the total_samples (e.g. 720 000) evenly between total_different_positions (e.g. 360), but because it might not be
+    # an integer, take the mod of it once. (say you have 13 samples and 5 positions - it would be split like [1, 3, 3, 3, 3]..
+    # temporary implementation choice
 
 
+output_ear_right = np.zeros([1, total_samples])
+output_ear_left = np.zeros([1, total_samples])
+# output_ear_left = np.zeros([1, total_samples])
 
-
-
+filter_state_right = 0
+filter_state_left = 0
 elapsed_duration = 0
 
 for position in population:
     angle = position[0]
     duration = position[1]
 
-    ir_ear1 = hrtf_database.Data.IR.get_values(indices={"M": position[0], "R": 0, "E": 0})
-    ir_ear2 = hrtf_database.Data.IR.get_values(indices={"M": position[0], "R": 1, "E": 0})
+    ir_ear_right = hrtf_database.Data.IR.get_values(indices={"M": angle, "R": 0, "E": 0})
+    ir_ear_left = hrtf_database.Data.IR.get_values(indices={"M": angle, "R": 1, "E": 0})
 
     start_index = elapsed_duration
-    end_index = elapsed_duration + duration
     elapsed_duration += duration
+    end_index = elapsed_duration
 
     if start_index == 0:
-        initial_state1 = lfilter_zi(ir_ear1, 1)
-        initial_state2 = lfilter_zi(ir_ear2, 1)
+        filter_state_right = lfilter_zi(ir_ear_right, 1)
+        filter_state_left = lfilter_zi(ir_ear_left, 1)
 
-        output_ear1[0, start_index:end_index], filter_state1 = \
-            lfilter(ir_ear1, 1, mic_data_transposed[0, start_index:end_index], zi=initial_state1)
-        output_ear2[0, start_index:end_index], filter_state2 = \
-            lfilter(ir_ear2, 1, mic_data_transposed[0, start_index:end_index], zi=initial_state2)
+    output_ear_right[0, start_index:end_index], filter_state_right = \
+        lfilter(ir_ear_right, 1, input_transposed_right[0, start_index:end_index], zi=filter_state_right)
+    output_ear_left[0, start_index:end_index], filter_state_left = \
+        lfilter(ir_ear_left, 1, input_transposed_left[0, start_index:end_index], zi=filter_state_left)
 
-    else:
-        output_ear1[0, start_index:end_index], filter_state1 = \
-            lfilter(ir_ear1, 1, mic_data_transposed[0, start_index:end_index], zi=filter_state1)
-        output_ear2[0, start_index:end_index], filter_state2 = \
-            lfilter(ir_ear2, 1, mic_data_transposed[0, start_index:end_index], zi=filter_state2)
+output = np.append(output_ear_right.transpose(), output_ear_left.transpose(), axis=1)
 
+# sd.play(output, sampling_freq)
+sd.play(output, sampling_freq)
+sf.write("sample_modified.wav", output, sampling_freq)
 
 
 print("Playing...")

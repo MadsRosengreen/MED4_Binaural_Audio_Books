@@ -29,8 +29,9 @@ output_ear2 = np.zeros([1, rec_time * sampling_freq])
 filter_state1 = 0
 filter_state2 = 0
 
-number_of_positions = 90
+number_of_positions = 360
 total_samples = sampling_freq * rec_time
+
 
 for i in np.arange(number_of_positions):
     ir_ear1 = hrtf_database.Data.IR.get_values(indices={"M": i, "R": 0, "E": 0})
