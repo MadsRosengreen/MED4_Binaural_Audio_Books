@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/Project A.B.B.A 2.0" />
-    <orderEntry type="inheritedJdk" />
+    <content url="file://$MODULE_DIR$/Project_A.B.B.A_2.0" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (AudioProcessing)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

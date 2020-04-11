@@ -21,9 +21,9 @@ input_transposed_left = np.reshape(data[:, 1], (-1, 1)).transpose()
 # .. because if we don't transpose it we will have red sentences in our console and who likes red sentences huh not me
 
 total_samples = data.shape[0]  # this is the "a lot" number
-total_different_positions = 360
-# this is the "total different positions" number, if the recording would be
-# "narrator for 10 sec, guy talking at 90 deg for 10 sec, narrator for 20 sec", this number would be 3
+total_different_positions = 360 # this is the "total different positions" number
+# if the recording is "narrator for 10 sec, guy talking at 90 deg for 10 sec, narrator for 20 sec",
+# total_samples is sampling_freq * 40 sec and total_different_positions is 3
 
 # Now that we wrote 6 lines of code and one novel of comments,
 # we're gonna create a data structure that will store all the transforming information.
@@ -33,14 +33,13 @@ total_different_positions = 360
 # Let's now, for the sake of me being bored and you being tired but weirdly excited about what this
 # fucker has to write, consider alternatives and why they suck.
 # Alternative number 1: Sample the recording evenly with a certain sampling rate and forget how long each position lasts.
-# example: sampling_rate = 200, data = [-1, -1, -1, -1, -1, -1, ..., -1, 300, 300, 300, 300, ..., 300, -1, -1, ..., -1]
+# example: sampling_rate = 200, data = [-1, -1, -1, ..., -1, 300, 300, 300, ..., 300, -1, -1, -1, ..., -1]
 # so when processing, every 200 samples we would apply new filter.. extremely inefficient if the positions don't change frequently.
 # Alternative number 2: There is no other alternative, I tricked you.
-# Alternative number 3: Why would there be alternative number 3 if there is no alternative number 2, are you stchupid?
-# Alternative number 4: If you come up with more efficient way to apply the filters, please comment below.
+# Alternative number 3: Why would there be alternative number 3 if there is no alternative number 2 are you stchupid
 
 
-# The transforming data should be populated from with the user interface, but let's just make it go around the head for.. a reason
+# The transforming data should be populated from the user interface, but let's just make it go around the head for.. a reason
 # "population" might not be the best name for it, but it sounds professional, which makes me feel like I know what Im doing
 population = []
 for i in np.arange(total_different_positions):  # remember, np.arange() is like normal range() but on steroids
